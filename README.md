@@ -1,2 +1,2 @@
 # justarizzz.github.io
-Aria's website (??)
+My website. It has basic CSS, but still it looks raw.
