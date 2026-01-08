@@ -25,7 +25,8 @@ body {
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
+  margin-top: 20px;
+  display: block; /* Ensures it moves to its own line */
+  margin-left: auto;
+  margin-right: auto;
 }
