@@ -1,6 +1,8 @@
 let score = 0;
 const scoreDisplay = document.getElementById('score');
 const clickImage = document.getElementById('click-image');
+const gameButton = document.getElementById('click-image');
+const clickSound = document.getElementById('click-sound');
 
 // Function to handle a click event
 function handleClick() {
@@ -24,3 +26,14 @@ function resetGame() {
 
 // Add an event listener to the image
 clickImage.addEventListener('click', handleClick);
+
+gameButton.addEventListener('click', () => {
+    // Reset sound to start (allows rapid clicking)
+    clickSound.currentTime = 0; 
+    
+    // Play the sound
+    clickSound.play();
+    
+    // You can also add your score logic here
+    console.log("Point added!");
+});
